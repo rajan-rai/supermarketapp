@@ -1,0 +1,7 @@
+{
+  "name": "garg-supermarket",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
