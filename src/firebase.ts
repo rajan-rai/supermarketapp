@@ -1,6 +1,6 @@
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
-import { Redirect } from 'react-router';
+import 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyAJ1ofJfZcu0q9J7DAmQlNCNghqsh-_vWw",
@@ -18,6 +18,7 @@ const firebaseConfig = {
   export const auth = app.auth();
   
   export const authObject = firebase.auth;
+  export const firestore = app.firestore();
 
 
 

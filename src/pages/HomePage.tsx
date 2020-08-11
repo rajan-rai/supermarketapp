@@ -28,15 +28,6 @@ import { useAuth } from '../auth';
 import { RefresherEventDetail } from '@ionic/core';
 import { Redirect } from 'react-router';
 
-function doRefresh(event: CustomEvent<RefresherEventDetail>) {
-  console.log('Begin async operation');
-
-  setTimeout(() => {
-    console.log('Async operation has ended');
-    event.detail.complete();
-  }, 2000);
-}
-
 const HomePage: React.FC = () => {
   const { loggedIn }= useAuth();
   const [searchText, setSearchText] = useState('');
@@ -62,9 +53,6 @@ const HomePage: React.FC = () => {
         </IonButtons>
       </IonHeader>
       <IonContent>
-      <IonRefresher slot="fixed" onIonRefresh={doRefresh}>
-        <IonRefresherContent></IonRefresherContent>
-      </IonRefresher>
       <IonCard>
         <IonCardHeader>
           <IonCardSubtitle>Card Subtitle</IonCardSubtitle>

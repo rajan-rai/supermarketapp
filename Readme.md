@@ -1,3 +1,5 @@
+First Install node.js to execute app
+
 Install command line interface for Ionic
 npm install - g @ionic/cli
 
